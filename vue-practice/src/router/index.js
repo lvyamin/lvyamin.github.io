@@ -106,7 +106,7 @@ Vue.use(VueRouter) // vue插件的使用方式
 
 const router = new VueRouter({
   mode: 'history',// 如果设置为hash 则显示http://localhost:8080/computedWatch#/
-  base: '/base/', //基路径：process.env.BASE_URL,在所有path之前添加的，并不是强制性的，用于区分路径的时候可以用
+  base: '',// '/base/', //基路径：process.env.BASE_URL,在所有path之前添加的，并不是强制性的，用于区分路径的时候可以用
   // linkActiveClass:'lym-active',router-link 的 a 标签的样式
   // linkExactActiveClass:'lym-exact-active',当前路由样式
   scrollBehavior(to,from,savePosition){//页面跳转时候要不要滚动
